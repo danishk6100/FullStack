@@ -1,0 +1,41 @@
+.box{
+    height:50%;
+    width:50%;
+    border:grey 1px solid;
+    border-radius: 3px;
+}
+.box p{
+    font-size: 12px;
+}
+.buttonWidth{
+    width:50%;
+}
+.alignCenter{
+    margin-left:32%;
+}
+.imgBox{
+    margin-left: 14%;
+    width:145px;
+    height: 56px;
+}
+.needHelp p{
+    margin: 0px;
+}
+button{
+    background-color:orange;
+    border:1px solid black;
+    border-radius: 3px;
+}
+input{
+    border-radius: 3px;
+    border:1px solid black;
+}
+.boldStyle p{
+    margin:0px;
+}
+.boldStyle input{
+    margin-bottom: 10px;
+}
+.overflow{
+    width: 52%;
+}

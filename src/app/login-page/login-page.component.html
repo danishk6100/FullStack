@@ -1,0 +1,46 @@
+<div class="alignCenter">
+    <img class="imgBox" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ_umixnVplgh8Ivltsk9SG7v3fYbtl7QHH1w&usqp=CAU" alt="">
+    <div *ngIf="!forgotPassword">
+        <div class="box p-3" *ngIf="emailID==''">
+            <h3>Sign-In</h3>
+            <p class="m-0"><b>Email (phone for mobile accounts)</b></p>
+            <input #email class="w-100 mb-3" type="email">
+            <button class="col-12 mb-4" (click)="setEmailID(email.value)">Continue</button>
+            <p>By continuing, you agree to Amazon's Conditions of Use and Privacy Notice.</p>
+            <p><a href="javascript:void(0)" (click)="showNeedHelp=!showNeedHelp">Need help?</a></p>
+            <div class="needHelp" *ngIf="showNeedHelp">
+                <p><a href="javascript:void(0)"(click)="forgotPassword=true;" >Forgot your password?</a></p>
+                <p><a href="javascript:void(0)">Other issues with Sign-In</a></p>
+            </div>
+        </div>
+
+        <div class="box p-3" *ngIf="emailID!=''">
+            <h3>Sign-In</h3>
+            <p>{{emailID}}<a href=""(click)="emailID=''">&nbsp;Change</a></p>
+            <p class="m-0"><b>Password</b><span class="col-3"></span> <a href="javascript:void(0)" (click)="forgotPassword=true;">Forgot your password?</a></p>
+            <input class="w-100 mb-3" type="email">
+            <button class="col-12 mb-4">Sign in</button>
+            <input type="checkbox" id="login"><label for="login" class="ml-1">Keep me signed in.</label>
+            <a href="">Details</a>
+        </div>
+
+        <div *ngIf="emailID==''">
+            <p style="font-size: 12px;">New to Amazon?</p>
+            <button class="buttonWidth" [routerLink]="'/register'">Create your Amazon account</button>
+        </div>
+    </div>
+    <div *ngIf="forgotPassword">
+        <div class="box p-3">
+            <h3>Password assistance</h3>
+            <p>Enter the email address or mobile phone number associated with your Amazon account.</p>
+            <p class="m-0">Email or mobile phone number</p>
+            <input type="text" class="w-100">
+            <button class="w-100 mt-3">Continue</button>
+        </div>
+        <div class="w-20 overflow">
+            <h6>Has your email or mobile number changed?</h6>
+            <p>If you no longer use the email address associated with your Amazon account, you may contact Customer Service for help restoring access to your account.</p>
+        </div>
+    </div>
+
+</div>

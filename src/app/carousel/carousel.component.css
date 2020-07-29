@@ -1,0 +1,11 @@
+.carouselOver{
+  position: relative;
+}
+.slideImage{
+    width:100%;
+}
+.pageBackground{
+    background-color:#eaeded ;
+    height:100%;
+    width:100%;
+}

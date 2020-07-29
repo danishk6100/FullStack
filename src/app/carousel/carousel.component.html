@@ -1,0 +1,12 @@
+<div class="carouselOver">
+  <ngb-carousel *ngIf="images" [showNavigationArrows]="true" [showNavigationIndicators]="false">
+    <ng-template ngbSlide *ngFor="let image of images">
+      <div>
+        <img [src]="image" alt="" class="slideImage">
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>
+<div class="pageBackground">
+  
+</div>

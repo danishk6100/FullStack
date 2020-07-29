@@ -1,0 +1,10 @@
+<div class="navBackground" *ngIf="openNav">
+    <a href="javascript:void(0)" class="closebtn" (click)="openNav=false">&times;</a>
+</div>
+<div id="mySidebar" class="sidebar" [ngClass]="{sideBarOpen : openNav}">
+    <a href="" class="header" [routerLink]="getRoute()">Hello {{signText}}</a>
+    <div class="navbarText mt-2 mb-2">SHOP BY CATEGORY</div>
+    <div *ngFor="let item of navBarContent">
+        <a [routerLink]="[item]">{{item}}</a>
+    </div>
+</div>

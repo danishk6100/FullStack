@@ -1,0 +1,29 @@
+.alignCenter{
+  margin-left:32%;
+}
+.imgBox{
+  margin-left: 14%;
+  width:145px;
+  height: 56px;
+}
+.box{
+  height:50%;
+  width:50%;
+  border:grey 1px solid;
+  border-radius: 3px;
+}
+.box p{
+  font-size: 12px;
+}
+button{
+  background-color:orange;
+  border:1px solid black;
+  border-radius: 3px;
+}
+input{
+  border-radius: 3px;
+  border:1px solid black;
+}
+.boldStyle p{
+  margin:0px;
+}
